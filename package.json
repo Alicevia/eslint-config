@@ -1,0 +1,22 @@
+{
+  "name": "@alicevia/eslint-config-monorepo",
+  "version": "1.0.0",
+  "packageManager": "pnpm@6.26.0",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "dev": "pnpm -r --filter ./packages --parallel run dev"
+  },
+  "author": "alicevia",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "typescript": "^4.6.4"
+  },
+  "workspaces": [
+    "packages\\vue",
+    "packages\\all"
+  ]
+}
