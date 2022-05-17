@@ -1,13 +1,16 @@
 module.exports = {
   overrides: [
     {
-      files: ["*.vue"],
-      parser: "vue-eslint-parser",
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
       parserOptions: {
-        parser: "@typescript-eslint/parser",
+        parser: '@typescript-eslint/parser',
       },
-    },
+
+    }
   ],
-  extends: ["plugin:vue/vue3-recommended", "@alicevia/eslint-config-ts"],
-  rules: {},
-};
+  extends: ['@alicevia/eslint-config-ts', 'plugin:vue/vue3-recommended'],
+  rules: {
+    'vue/multi-word-component-names': 0,
+  },
+}

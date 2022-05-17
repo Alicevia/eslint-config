@@ -1,3 +1,3 @@
-export default {
-  extends: ["@alicevia/eslint-config-vue"],
-};
+module.exports = {
+  extends: ['@alicevia/eslint-config-vue'],
+}
