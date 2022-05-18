@@ -15,9 +15,6 @@
   "dependencies": {
     "@alicevia/eslint-config-vue": "workspace:*"
   },
-  "devDependencies": {
-    "eslint": "^8.15.0"
-  },
   "publishConfig": {
     "access": "public"
   }
