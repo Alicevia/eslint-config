@@ -1,6 +1,6 @@
 {
   "name": "@alicevia/eslint-config-ts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "files": [
@@ -19,7 +19,12 @@
     "access": "public"
   },
   "peerDependencies": {
+    "eslint": ">=8.15.0",
     "@typescript-eslint/eslint-plugin": "^5.24.0",
-    "@typescript-eslint/parser": "^5.24.0"
+    "@typescript-eslint/parser": "^5.24.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0"
   }
 }

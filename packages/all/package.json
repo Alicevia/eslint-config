@@ -1,6 +1,6 @@
 {
   "name": "@alicevia/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "files": [
@@ -17,5 +17,16 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.15.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "vue-eslint-parser": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.24.0",
+    "@typescript-eslint/parser": "^5.24.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0"
   }
 }
