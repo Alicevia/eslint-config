@@ -4,9 +4,7 @@
   "packageManager": "pnpm@6.26.0",
   "main": "index.js",
   "private": "true",
-  "scripts": {
-    "patch": "npm version patch"
-  },
+  "scripts": {},
   "author": "alicevia",
   "license": "ISC",
   "keywords": [],
