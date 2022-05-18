@@ -29,6 +29,7 @@ module.exports = {
     '!.vscode'
   ],
   rules: {
+    'import/no-unresolved': 0,
     'space-before-function-paren': ['error', 'always'],
     'comma-dangle': [
       'error',
