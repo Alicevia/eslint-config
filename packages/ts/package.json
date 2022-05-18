@@ -1,6 +1,6 @@
 {
   "name": "@alicevia/eslint-config-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "files": [
@@ -12,12 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@alicevia/eslint-config-basic": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.24.0",
-    "@typescript-eslint/parser": "^5.24.0"
+  "devDependencies": {
+    "@alicevia/eslint-config-basic": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.24.0",
+    "@typescript-eslint/parser": "^5.24.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@alicevia/eslint-config-basic",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "files": [
@@ -12,13 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.15.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
