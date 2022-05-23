@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['@alicevia/eslint-config-vue'],
+  extends: [
+    '@alicevia/ts',
+    '@alicevia/vue'
+  ]
 }

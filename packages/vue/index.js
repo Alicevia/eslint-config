@@ -1,10 +1,26 @@
 module.exports = {
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    parser: '@typescript-eslint/parser',
-  },
-  extends: ['@alicevia/eslint-config-ts', 'plugin:vue/vue3-recommended'],
-  rules: {
-    'vue/multi-word-component-names': 0,
-  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser'
+      },
+      extends: ['plugin:vue/vue3-recommended', '@alicevia/basic'],
+      rules: {
+        'vue/multi-word-component-names': 0,
+        'vue/html-self-closing': ['error', {
+          html: {
+            void: 'never',
+            normal: 'never',
+            component: 'never'
+          },
+          svg: 'always',
+          math: 'always'
+        }],
+        'vue/max-attributes-per-line': 'off'
+
+      }
+    }
+  ]
 }

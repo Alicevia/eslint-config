@@ -1,6 +1,6 @@
 {
   "name": "@alicevia/eslint-config-basic",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "",
   "main": "index.js",
   "files": [
@@ -16,7 +16,9 @@
     "access": "public"
   },
   "peerDependencies": {
-    "eslint": ">=8.15.0",
+    "eslint": ">=8.15.0"
+  },
+  "dependencies": {
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.0",
