@@ -26,6 +26,16 @@ importers:
       eslint-plugin-promise: 6.0.0_eslint@8.16.0
       typescript: registry.npmmirror.com/typescript/4.6.4
 
+  packages/all:
+    specifiers:
+      '@alicevia/eslint-config-basic': workspace:*
+      '@alicevia/eslint-config-ts': workspace:*
+      '@alicevia/eslint-config-vue': workspace:*
+    dependencies:
+      '@alicevia/eslint-config-basic': link:../basic
+      '@alicevia/eslint-config-ts': link:../ts
+      '@alicevia/eslint-config-vue': link:../vue
+
   packages/basic:
     specifiers:
       eslint-config-standard: ^17.0.0
