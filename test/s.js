@@ -6,5 +6,3 @@ class Person {
 }
 console.log(bbx)
 const p1 = new Person()
-
-

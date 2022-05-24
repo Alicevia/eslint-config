@@ -8,6 +8,7 @@ module.exports = {
       },
       extends: ['plugin:vue/vue3-recommended', '@alicevia/basic'],
       rules: {
+        'no-unused-vars': 'off',
         'vue/multi-word-component-names': 0,
         'vue/html-self-closing': ['error', {
           html: {
