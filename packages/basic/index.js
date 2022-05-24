@@ -17,7 +17,8 @@ module.exports = {
     __dirname: 'readonly',
     defineEmits: 'readonly',
     defineProps: 'readonly',
-    $message: 'readonly'
+    $message: 'readonly',
+    $loadingBar: 'readonly',
   }
 
   // settings: {
