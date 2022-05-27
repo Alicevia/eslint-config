@@ -18,7 +18,7 @@ module.exports = {
     defineEmits: 'readonly',
     defineProps: 'readonly',
     $message: 'readonly',
-    $loadingBar: 'readonly',
+    $loadingBar: 'readonly'
   }
 
   // settings: {
