@@ -11,7 +11,8 @@ module.exports = {
   rules: {
     'space-before-function-paren': ['error', 'always'],
     quotes: ['error', 'single'],
-    semi: ['error', 'never']
+    semi: ['error', 'never'],
+    camelcase: 'off',
   },
   globals: {
     __dirname: 'readonly',
