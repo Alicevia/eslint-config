@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "eslint-plugin-vue": "^9.0.1",
-    "vue-eslint-parser": "^9.0.2"
+    "vue-eslint-parser": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1"
   }
 }
