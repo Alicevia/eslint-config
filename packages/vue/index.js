@@ -10,6 +10,17 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   overrides: [
+    {
+      file:'*.vue',
+      rules:{
+        'vue/multi-word-component-names': [
+          'error',
+          {
+            ignores: ['index'], //需要忽略的组件名
+          },
+        ],
+      }
+    }
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -29,8 +40,8 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'space-before-function-paren': ['error', 'always'],
     'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0,maxBOF: 0 }],
-    'key-spacing': ['error', { afterColon: true }],
-    'arrow-spacing': ['error',{ before: true, after: true }],
+    'key-spacing': ['error', {  mode: 'strict'}],
+    'arrow-spacing': ['error',{ btrueefore: true, after:  }],
     'object-curly-spacing': ['error', 'always'],
     'no-console': ['error', { allow: ['warn', 'error'] }], 
   },
