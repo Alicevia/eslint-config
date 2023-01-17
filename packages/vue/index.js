@@ -11,16 +11,16 @@ module.exports = {
   ],
   overrides: [
     {
-      file:'*.vue',
-      rules:{
+      files: ['*.vue'],
+      rules: {
         'vue/multi-word-component-names': [
           'error',
           {
             ignores: ['index'], //需要忽略的组件名
           },
         ],
-      }
-    }
+      },
+    },
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -38,10 +38,11 @@ module.exports = {
     indent: ['error', 2],
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'always-multiline'],
+    'comma-spacing': ['error', { before: false, after: true }],
     'space-before-function-paren': ['error', 'always'],
     'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 0,maxBOF: 0 }],
-    'key-spacing': ['error', {  mode: 'strict'}],
-    'arrow-spacing': ['error',{ btrueefore: true, after:  }],
+    'key-spacing': ['error', { mode: 'strict' }],
+    'arrow-spacing': ['error',{ before: true, after: true }],
     'object-curly-spacing': ['error', 'always'],
     'no-console': ['error', { allow: ['warn', 'error'] }], 
   },

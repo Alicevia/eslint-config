@@ -1,5 +1,5 @@
 module.exports = {
   root: true,
-  extends: ['@alicevia/vue']
+  extends: ['@alicevia/vue'],
 
 }
