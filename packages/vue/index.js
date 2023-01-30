@@ -13,6 +13,8 @@ module.exports = {
     {
       files: ['*.vue'],
       rules: {
+        'vue/v-on-event-hyphenation': 0,
+        'vue/attribute-hyphenation': 0,
         'vue/max-attributes-per-line': 'off',
         'vue/no-v-html': 'off',
         'vue/require-prop-types': 'off',
@@ -93,7 +95,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
     'quote-props': ['error', 'as-needed'],
     indent: ['error', 2],
     semi: ['error', 'never'],
@@ -105,5 +107,12 @@ module.exports = {
     'arrow-spacing': ['error', { before: true, after: true }],
     'object-curly-spacing': ['error', 'always'],
     'no-console': ['error', { allow: ['warn', 'error'] }], 
+  },
+  globals: {
+    __dirname: true,
+    process: true,
+    defineProps: true,
+    defineEmits: true,
+    defineExpose: true,
   },
 }
