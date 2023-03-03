@@ -42,6 +42,15 @@ module.exports = {
         'vue/no-v-text-v-html-on-component': 'error',
         'vue/padding-line-between-blocks': ['error', 'always'],
         'vue/prefer-separate-static-class': 'error',
+        'vue/html-self-closing': ['error', {
+          html: {
+            void: 'never',
+            normal: 'never',
+            component: 'never',
+          },
+          svg: 'always',
+          math: 'always',
+        }],
         // // extensions
         // 'vue/array-bracket-spacing': ['error', 'never'],
         // 'vue/arrow-spacing': ['error', { before: true, after: true }],
@@ -107,6 +116,7 @@ module.exports = {
     'arrow-spacing': ['error', { before: true, after: true }],
     'object-curly-spacing': ['error', 'always'],
     'no-console': ['error', { allow: ['warn', 'error'] }], 
+   
   },
   globals: {
     __dirname: true,
