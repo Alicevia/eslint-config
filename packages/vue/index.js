@@ -124,5 +124,8 @@ module.exports = {
     defineProps: true,
     defineEmits: true,
     defineExpose: true,
+    $message: true,
+    $loadingBar: true,
+    $dialog: true,
   },
 }
